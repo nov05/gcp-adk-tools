@@ -2,6 +2,9 @@
 
 * Lab - https://www.skills.google/paths/3273/course_templates/1275/labs/606590
 
+
+* Download and install ADK and code samples for this lab
+  
 ```bash
 cd ~
 git clone https://github.com/nov05/gcp-adk-tools.git
