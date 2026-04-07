@@ -24,3 +24,8 @@
   MODEL=gemini-2.5-flash
   EOF
   ```
+
+  ```bash
+  cp langchain_tool_agent/.env function_tool_agent/.env
+  cp langchain_tool_agent/.env vertexai_search_tool_agent/.env
+  ```
