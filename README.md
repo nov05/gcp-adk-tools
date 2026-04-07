@@ -29,3 +29,8 @@
   cp langchain_tool_agent/.env function_tool_agent/.env
   cp langchain_tool_agent/.env vertexai_search_tool_agent/.env
   ```
+
+  In the Cloud Shell Terminal, from the adk_tools project directory, launch the Agent Development Kit Dev UI with the following commands:  
+  ```bash
+  adk web --allow_origins "regex:https://.*\.cloudshell\.dev"
+  ```
