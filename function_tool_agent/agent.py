@@ -82,5 +82,5 @@ root_agent = Agent(
     before_model_callback=log_query_to_model,
     after_model_callback=log_model_response,
     # Add the function tools below
-
+    tools=[get_date, write_journal_entry]  ## Added by Nov05
 )
