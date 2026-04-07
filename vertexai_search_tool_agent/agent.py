@@ -40,5 +40,5 @@ root_agent = Agent(
     before_model_callback=log_query_to_model,
     after_model_callback=log_model_response,
     # Add the tools instructed below
-    tools=[vertexai_search_tool]  ## Added by Nov05
+    tools=[vertexai_search_tool, get_date]  ## Added by Nov05
 )
