@@ -15,7 +15,7 @@ RETRY_OPTIONS = types.HttpRetryOptions(initial_delay=1, max_delay=3, attempts=30
 from .tools import get_date
 
 # Add the VertexAiSearchTool import below
-
+from google.adk.tools import VertexAiSearchTool  ## Added by Nov05
 
 load_dotenv()
 cloud_logging_client = google.cloud.logging.Client()
@@ -40,5 +40,5 @@ root_agent = Agent(
     before_model_callback=log_query_to_model,
     after_model_callback=log_model_response,
     # Add the tools instructed below
-
+    tools=[vertexai_search_tool]  ## Added by Nov05
 )
