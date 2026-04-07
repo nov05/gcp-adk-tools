@@ -7,7 +7,7 @@
   
   ```bash
   cd ~
-  git clone https://github.com/nov05/gcp-adk-tools.git
+  git clone https://github.com/nov05/gcp-adk-tools.git adk_tools
   export PATH=$PATH:"/home/${USER}/.local/bin"
   python3 -m pip install -r adk_tools/requirements.txt
   ```
