@@ -34,3 +34,9 @@
   ```bash
   adk web --allow_origins "regex:https://.*\.cloudshell\.dev"
   ```
+  Or  
+  ```bash
+  adk web --allow_origins "regex:https://.*\.cloudshell\.dev" --reload_agents
+  ```
+
+  
