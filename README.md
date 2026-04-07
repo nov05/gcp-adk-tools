@@ -19,7 +19,7 @@
   cd ~/adk_tools
   cat << EOF > langchain_tool_agent/.env
   GOOGLE_GENAI_USE_VERTEXAI=TRUE
-  GOOGLE_CLOUD_PROJECT=$GOOGLE_CLOUD_PROJECT
+  # GOOGLE_CLOUD_PROJECT=qwiklabs-gcp-03-64c145f15937
   GOOGLE_CLOUD_LOCATION=global
   MODEL=gemini-2.5-flash
   EOF
