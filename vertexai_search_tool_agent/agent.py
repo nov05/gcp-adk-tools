@@ -26,6 +26,14 @@ vertexai_search_tool = VertexAiSearchTool(
     search_engine_id="projects/YOUR_PROJECT_ID/locations/global/collections/default_collection/engines/YOUR_SEARCH_APP_ID"
 )
 
+## Added by Nov05
+vertexai_search_agent = Agent(
+    name="vertexai_search_agent",
+    model=Gemini(model=os.getenv("MODEL"), retry_options=RETRY_OPTIONS),
+    instruction="Use your search tool to look up facts.",
+    tools=[vertexai_search_tool]
+)
+
 root_agent = Agent(
     # A unique name for the agent.
     name="root_agent",
@@ -40,5 +48,10 @@ root_agent = Agent(
     before_model_callback=log_query_to_model,
     after_model_callback=log_model_response,
     # Add the tools instructed below
-    tools=[vertexai_search_tool, get_date]  ## Added by Nov05
+    # tools=[vertexai_search_tool] ## Added by Nov05
+    # tools=[vertexai_search_tool, get_date]  ## This would cause error.
+    tools=[
+        AgentTool(vertexai_search_agent, skip_summarization=False),
+        get_date
+    ]
 )
