@@ -16,6 +16,7 @@ from .tools import get_date
 
 # Add the VertexAiSearchTool import below
 from google.adk.tools import VertexAiSearchTool  ## Added by Nov05
+project_id = os.getenv("GOOGLE_CLOUD_PROJECT")
 
 load_dotenv()
 cloud_logging_client = google.cloud.logging.Client()
@@ -23,7 +24,7 @@ cloud_logging_client.setup_logging()
 
 # Create your vertexai_search_tool and update its path below
 vertexai_search_tool = VertexAiSearchTool(
-    search_engine_id="projects/YOUR_PROJECT_ID/locations/global/collections/default_collection/engines/YOUR_SEARCH_APP_ID"
+    search_engine_id="projects/" + project_id + "/locations/global/collections/default_collection/engines/YOUR_SEARCH_APP_ID"
 )
 
 ## Added by Nov05
