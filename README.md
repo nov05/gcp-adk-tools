@@ -39,4 +39,6 @@
   adk web --allow_origins "regex:https://.*\.cloudshell\.dev" --reload_agents
   ```
 
+* Task 4. Use a function as a custom tool
+* Task 5. Use Vertex AI Search as a tool to ground on your own data  
   
