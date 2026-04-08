@@ -13,6 +13,11 @@
   ```
 
 * Task 2. Create a search app that will be used to ground responses on your own data
+
+  ```bash
+  export SEARCH_APP_ID=planet-search_1775604360365 ## ⚠️ Your search app ID
+  ```
+  
 * Task 3. Use a Third-Party Tool from the LangChain Community
 
   ```bash
