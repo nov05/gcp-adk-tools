@@ -44,6 +44,13 @@
   adk web --allow_origins "regex:https://.*\.cloudshell\.dev" --reload_agents
   ```
 
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/pic001/2026-04-07%2018_37_15-NVIDIA%20GeForce%20Overlay.jpg" width=800>   
+  
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/pic001/2026-04-07%2018_37_15-NVIDIA%20GeForce%20Overlay-01.gif" width=800>   
+  
 * Task 4. Use a function as a custom tool
+
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/pic001/2026-04-07%2018_46_06-NVIDIA%20GeForce%20Overlay.jpg" width=800>  
+  
 * Task 5. Use Vertex AI Search as a tool to ground on your own data  
   
